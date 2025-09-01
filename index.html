@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">SA</div>
+            <ul>
+                <li class="active"><a href="index.html">Timetable</a></li>
+                <li><a href="edit.html">Edit Attendance</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="#">CGPA Calculator</a></li>
+            </ul>
+        </nav>
+        <div class="main-content" id="main-content">
+            <div class="container">
+                <header>
+                    <div class="header-left">
+                        <button class="menu-btn" id="menu-btn">
+                            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                        </button>
+                        <div class="logo">Timetable</div>
+                    </div>
+                    <a href="edit.html" class="edit-btn">Edit Attendance</a>
+                </header>
+                <main>
+                    <div class="day-selector">
+                        <button id="prev-day">-</button>
+                        <div class="day-display-wrapper">
+                            <span class="day-label">Today</span>
+                            <h2 id="day-display">1</h2>
+                        </div>
+                        <button id="next-day">+</button>
+                    </div>
+                    <div class="timetable-grid" id="timetable-grid"></div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="sidebar.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Attendance</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">SA</div>
+            <ul>
+                <li><a href="index.html">Timetable</a></li>
+                <li class="active"><a href="edit.html">Edit Attendance</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="#">CGPA Calculator</a></li>
+            </ul>
+        </nav>
+        <div class="main-content" id="main-content">
+            <div class="container">
+                <header>
+                    <div class="header-left">
+                        <button class="menu-btn" id="menu-btn">
+                            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                        </button>
+                        <div class="logo">Edit Attendance</div>
+                    </div>
+                    <a href="index.html" class="edit-btn">Back to Timetable</a>
+                </header>
+                <main>
+                    <form id="attendance-form"></form>
+                    <button type="submit" form="attendance-form" class="save-btn">Save Changes</button>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="sidebar.js"></script>
+    <script src="edit.js"></script>
+</body>
+</html>
